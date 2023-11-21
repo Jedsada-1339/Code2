@@ -8,6 +8,6 @@ public class excercise3 {
         else{
             System.err.println("Usage:java Adder <num1> <num2>");
         }
-    }
+    }   
     
 }
