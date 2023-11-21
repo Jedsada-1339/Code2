@@ -40,7 +40,7 @@ h1{
 
 .search button{
     padding: 10px 20px;
-    background-color: #ff5722;
+    background-color: #75159b;
     border: none;
     width: 10%;
     cursor: pointer;
@@ -52,7 +52,7 @@ h1{
 }
 
 .search button:hover{
-    background-color: #e64a19;
+    background-color: rgb((112, 24, 219), 25, 230);
 }
 
 .meal-list{
