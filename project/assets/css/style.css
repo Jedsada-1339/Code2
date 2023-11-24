@@ -297,7 +297,7 @@ main {flex-grow: 1;}
 \*-----------------------------------*/
 .has-state{
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
 }
 .has-state::after{
   content: "";
@@ -312,8 +312,8 @@ main {flex-grow: 1;}
 
 .material-symbols-outlined{
   display: block;
-  width: lem;
-  height: lem;
+  width: 1em;
+  height: 1em;
   overflow: hidden;
   font-variation-settings: 
   'Fill' 0,
@@ -431,11 +431,10 @@ main {flex-grow: 1;}
   background-color: var(--primary-hover);
 }
 
-.btn-secondary{background-color: var(--primary-container);}
-
 
 /* secondary button */
 
+.btn-secondary{background-color: var(--primary-container);}
 /* badge button */
 
 /* filter button */
@@ -471,7 +470,7 @@ main {flex-grow: 1;}
 
 /*-----------------------------------*\
   #HEADER
-\*-----------------------------------*/
+\*-----------------------------------*/ 
 .navbar,
 .header.btn-primary{display: none;}
 
@@ -502,12 +501,12 @@ main {flex-grow: 1;}
   #HERO
 \*-----------------------------------*/
 
-.hero{padding-inline: 16px;}
+.hero {padding-inline: 16px;}
 
 .banner-card{
   background-color: var(--image-background);
   color: var(--white);
-  background-image: url("../images/hero-banner-small.jpg");
+  background-image: url(../images/hero-banner-small.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -531,22 +530,34 @@ main {flex-grow: 1;}
   overflow: hidden;
 }
 
-.hero .search-wrapper .leading-icon{
+.hero .search-wrapper .leading-icon {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
 }
 
-.search-field{
+.search-field {
   height: 56px;
   background-color: var(--primary-container);
   padding-inline: 56px;
   outline: none;
 }
 
+.search-submit {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  width: 48px;
+  display: grid;
+  place-items: center;
+  background-color: var(--primary);
+  border-radius: var(--radius-4);
+  transition: var(--transition-short);
+}
 
-.search-submit :where(:hover,:focus-visible):not(:active){
+.search-submit:where(:hover, :focus-visible):not(:active){
   background-color: var(--primary-hover);
 }
 
