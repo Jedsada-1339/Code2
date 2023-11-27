@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumberGuessingMethodGame",
+            "request": "launch",
+            "mainClass": "Sirikhojornsombut.Jedsada.lab3.NumberGuessingMethodGame",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
+            "name": "NumberGuessingGame",
+            "request": "launch",
+            "mainClass": "Sirikhojornsombut.Jedsada.lab3.NumberGuessingGame",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
             "name": "test",
             "request": "launch",
             "mainClass": "test",
