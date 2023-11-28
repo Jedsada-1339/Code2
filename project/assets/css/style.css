@@ -779,6 +779,11 @@ main {
   display: none;
 }
 
+.tap .btn-secondary {
+  max-width: 100%;
+  margin-block-start: 12px;
+}
+
 
 
 
