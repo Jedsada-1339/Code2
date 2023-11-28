@@ -62,7 +62,7 @@ addEventOnElement($tabBtns, "keydown", function (e){
         this.setAttribute("tabindex", -1);
         $previousElement.setAttribute("tabindex", 0);
         $previousElement.focus()
-    } else if (e.key === "Tab") {
+    } else if (e.key === "ArrowUp") {
         this.setAttribute("tabindex", -1);
         $lastActiveTabBtn.setAttribute("tabindex", 0);
     }
