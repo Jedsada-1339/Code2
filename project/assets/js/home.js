@@ -52,7 +52,7 @@ addEventOnElement($tabBtns, "click", function(){
 addEventOnElement($tabBtns, "keydown", function (e){
 
     const/** {NodeElement} */ $nextElement = this.nextElementSibling;
-    const/** {NodeElement} */ $previousElement = this.$previousElementSibling;
+    const/** {NodeElement} */ $previousElement = this.previousElementSibling;
 
     if (e.key === "ArrowRight" && $nextElement){
         this.setAttribute("tabindex", -1);
