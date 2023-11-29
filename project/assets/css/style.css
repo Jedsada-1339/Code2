@@ -566,7 +566,7 @@ main {
   inset: 0;
 }
 
-.card:where(.meta-wrapper, .meta-item) {
+.card :where(.meta-wrapper, .meta-item) {
   display: flex;
   align-items: center;
 }
@@ -575,7 +575,7 @@ main {
 
 .card .meta-item {gap: 8px;}
 
-.card .meta-item .material-symbols-outlined { font-size: 1.8rem;}
+.card .meta-item .material-symbols-outlined {font-size: 1.8rem;}
 
 .saved .bookmark-add,
 .removed .bookmark {display: none;}
