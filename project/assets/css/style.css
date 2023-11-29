@@ -265,7 +265,7 @@ main {
   line-height: 32px;
 }
 
-.title-mediun {
+.title-medium {
   font-size: var(--fs-title-medium);
   font-weight: var(--weight-medium);
   line-height: 24px;
