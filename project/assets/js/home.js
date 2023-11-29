@@ -30,8 +30,8 @@ const /** {Nodelist} */ $tabPanels = document.querySelectorAll("[data-tab-panel]
 let /** NodeElement */ [$lastActiveTabPanel] = $tabPanels;
 let /** NodeElement */ [$lastActiveTabBtn] = $tabBtns;
 
-addEventOnElement($tabBtns, "click", function(){
-    $lastActiveTabPanel.setAttribute("hidden","");
+addEventOnElement($tabBtns, "click", function() {
+    $lastActiveTabPanel.setAttribute("hidden", "");
     $lastActiveTabBtn.setAttribute("aria-selected", false);
     $lastActiveTabBtn.setAttribute("tabindex", -1);
 
@@ -49,12 +49,12 @@ addEventOnElement($tabBtns, "click", function(){
  * Navigate Tab with arrow key
  */
 
-addEventOnElement($tabBtns, "keydown", function (e){
+addEventOnElement($tabBtns, "keydown", function (e) {
 
-    const/** {NodeElement} */ $nextElement = this.nextElementSibling;
-    const/** {NodeElement} */ $previousElement = this.previousElementSibling;
+    const /** {NodeElement} */ $nextElement = this.nextElementSibling;
+    const /** {NodeElement} */ $previousElement = this.previousElementSibling;
 
-    if (e.key === "ArrowRight" && $nextElement){
+    if (e.key === "ArrowRight" && $nextElement) {
         this.setAttribute("tabindex", -1);
         $nextElement.setAttribute("tabindex", 0);
         $nextElement.focus();

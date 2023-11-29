@@ -339,9 +339,10 @@ main {
   height: 1em;
   overflow: hidden;
   font-variation-settings:
-    'Fill' 0,
+    'FILL' 0,
     'wght' 400,
-    'GRAD' 0 'opsz' 24;
+    'GRAD' 0,
+    'opsz' 24;
 }
 
 .section {
@@ -363,7 +364,7 @@ main {
 
 .img-holder {
   background-color: var(--image-background);
-  background-image: url(../images/image-placeholder.svg);
+  background-image: url("../images/image-placeholder.svg");
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: center;
@@ -549,7 +550,7 @@ main {
   gap: 8px;
 }
 
-.card-link{
+.card-link {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -559,13 +560,13 @@ main {
 
 .card-link:where(:hover, :focus-visible) {color: var(--primary);}
 
-.card-link::before{
+.card-link::before {
   content: "";
   position: absolute;
   inset: 0;
 }
 
-.card:where(.meta-wrapper, .meta-item){
+.card:where(.meta-wrapper, .meta-item) {
   display: flex;
   align-items: center;
 }
@@ -574,7 +575,7 @@ main {
 
 .card .meta-item {gap: 8px;}
 
-.card .meta-item .material-symbols-outlined{ font-size: 1.8rem;}
+.card .meta-item .material-symbols-outlined { font-size: 1.8rem;}
 
 .saved .bookmark-add,
 .removed .bookmark {display: none;}
@@ -755,6 +756,7 @@ main {
   display: grid;
   place-items: center;
   background-color: var(--primary);
+  color: var(--white);
   border-radius: var(--radius-4);
   transition: var(--transition-short);
 }
