@@ -668,7 +668,7 @@ main {
   #HEADER
 \*-----------------------------------*/
 .navbar,
-.header.btn-primary {
+.header .btn-primary {
   display: none;
 }
 
