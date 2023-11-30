@@ -5,8 +5,8 @@
 /**
  * Import
  */
-import { fetchdata } from "./api";
-import { $skeletonCard, cardQueries } from "./global";
+import { fetchData } from "./api.js";
+import { $skeletonCard, cardQueries } from "./global.js";
 
 /**
  * Home page Search
@@ -51,7 +51,7 @@ addEventOnElement($tabBtns, "click", function () {
     $lastActiveTabPanel = $currentTabPanel;
     $lastActiveTabBtn = this;
 
-    addTabcontent(this, $currentTabPanel);
+    addTabContent(this, $currentTabPanel);
 });
 
 /**
@@ -84,10 +84,10 @@ addEventOnElement($tabBtns, "keydown", function (e) {
  * fetch data for tab content
  */
 
-const addTabcontent = ($currentTabBtn, $currentTabPanel) => {
+const addTabContent = ($currentTabBtn, $currentTabPanel) => {
 
-    const /** {NodeElement} */ $gridlist = document.createElement("div");
-    $gridlist.classList.add("grid-list");
+    const /** {NodeElement} */ $gridList = document.createElement("div");
+    $gridList.classList.add("grid-list");
 
     $currentTabPanel.innerHTML = `
         <div class="grid-list">
@@ -97,4 +97,4 @@ const addTabcontent = ($currentTabBtn, $currentTabPanel) => {
 
 }
 
-addTabcontent($lastActiveTabBtn, $lastActiveTabPanel);
+addTabContent($lastActiveTabBtn, $lastActiveTabPanel);

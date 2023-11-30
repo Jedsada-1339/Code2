@@ -891,7 +891,7 @@ main {
   #FOOTER
 \*-----------------------------------*/
 
-.footer .logo {display: none;}
+.footer .logo { display: none; }
 
 .footer {
   padding: 16px;
@@ -903,9 +903,9 @@ main {
   border-block-start: 1px solid var(--outline);
 }
 
-.copyright {opacity: 0.8;}
+.copyright { opacity: 0.8; }
 
-.footer .edamam img{ width: 180px;}
+.footer .edamam img{ width: 180px; }
 
 
 
