@@ -1,6 +1,13 @@
 
 "use strict";
 
+
+/**
+ * Import
+ */
+import { fetchdata } from "./api";
+import { $skeletonCard, cardQueries } from "./global";
+
 /**
  * Home page Search
  */
@@ -8,7 +15,7 @@
 const /** {NodeElement} */ $searchField = document.querySelector("[data-search-field]");
 const /** {NodeElement} */ $searchBtn = document.querySelector("[data-search-btn]");
 
-$searchBtn.addEventListener("click" ,function(){
+$searchBtn.addEventListener("click", function () {
     if ($searchField.value) window.location = `/recipes.html?q=${$searchField.value}`;
 });
 
@@ -27,22 +34,24 @@ $searchField.addEventListener("keydown", e => {
 const /** {Nodelist} */ $tabBtns = document.querySelectorAll("[data-tab-btn]");
 const /** {Nodelist} */ $tabPanels = document.querySelectorAll("[data-tab-panel]");
 
-let /** NodeElement */ [$lastActiveTabPanel] = $tabPanels;
-let /** NodeElement */ [$lastActiveTabBtn] = $tabBtns;
+let /** NodeElement */[$lastActiveTabPanel] = $tabPanels;
+let /** NodeElement */[$lastActiveTabBtn] = $tabBtns;
 
-addEventOnElement($tabBtns, "click", function() {
+addEventOnElement($tabBtns, "click", function () {
     $lastActiveTabPanel.setAttribute("hidden", "");
     $lastActiveTabBtn.setAttribute("aria-selected", false);
     $lastActiveTabBtn.setAttribute("tabindex", -1);
 
     const /** {NodeElement} */ $currentTabPanel = document.querySelector
-    (`#${this.getAttribute("aria-controls")}`);
+        (`#${this.getAttribute("aria-controls")}`);
     $currentTabPanel.removeAttribute("hidden");
     this.setAttribute("aria-selected", true);
     this.setAttribute("tabindex", 0);
 
     $lastActiveTabPanel = $currentTabPanel;
     $lastActiveTabBtn = this;
+
+    addTabcontent(this, $currentTabPanel);
 });
 
 /**
@@ -68,3 +77,24 @@ addEventOnElement($tabBtns, "keydown", function (e) {
     }
 
 });
+
+
+/**
+ * Work with API
+ * fetch data for tab content
+ */
+
+const addTabcontent = ($currentTabBtn, $currentTabPanel) => {
+
+    const /** {NodeElement} */ $gridlist = document.createElement("div");
+    $gridlist.classList.add("grid-list");
+
+    $currentTabPanel.innerHTML = `
+        <div class="grid-list">
+            ${$skeletonCard.repeat(12)}
+        </div>
+    `;
+
+}
+
+addTabcontent($lastActiveTabBtn, $lastActiveTabPanel);
