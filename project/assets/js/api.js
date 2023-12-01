@@ -2,8 +2,8 @@
 "use strict";
 
 window.ACCESS_POINT = "https://api.edamam.com/api/recipes/v2";
-const /** {String} */ APP_ID = "22215f11";
-const /** {String} */ API_KEY = "0d89a6c87bba49102fb456cbe4645de2";
+const /** {String} */ APP_ID = "ca30c479";
+const /** {String} */ API_KEY = "dd1f9902bdb8ca014851044cd2549f5f";
 const /** {String} */ TYPE = "public";
 
 export const fetchData = async function (queries, successCallback) {
