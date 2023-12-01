@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumberGuessingGames",
+            "request": "launch",
+            "mainClass": "sirikhojornsombut.jedsada.lab3.NumberGuessingGames",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
+            "name": "ConfigurableNumberGuessingGame",
+            "request": "launch",
+            "mainClass": "sirikhojornsombut.jedsada.lab3.ConfigurableNumberGuessingGame",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
+            "name": "NumberGuessingMethodGame",
+            "request": "launch",
+            "mainClass": "sirikhojornsombut.jedsada.lab3.NumberGuessingMethodGame",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
             "name": "NumberGuessingMethodGame",
             "request": "launch",
             "mainClass": "Sirikhojornsombut.Jedsada.lab3.NumberGuessingMethodGame",
