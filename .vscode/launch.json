@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RecursiveSum",
+            "request": "launch",
+            "mainClass": "RecursiveSum",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
+            "name": "excercise2_1",
+            "request": "launch",
+            "mainClass": "excercise2_1",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
+            "name": "Exercise2_1",
+            "request": "launch",
+            "mainClass": "Exercise2_1",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
             "name": "NumberGuessingGames",
             "request": "launch",
             "mainClass": "sirikhojornsombut.jedsada.lab3.NumberGuessingGames",
