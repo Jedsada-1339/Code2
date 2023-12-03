@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumberGuessingGame",
+            "request": "launch",
+            "mainClass": "sirikhojornsombut.jedsada.lab3.NumberGuessingGame",
+            "projectName": "Code2_e8113cec"
+        },
+        {
+            "type": "java",
             "name": "RecursiveSum",
             "request": "launch",
             "mainClass": "RecursiveSum",
