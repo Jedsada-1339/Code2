@@ -996,7 +996,7 @@
   #TAG
 \*-----------------------------------*/
 
-.tag{ text-align: center;}
+.tag { text-align: center; }
 
 .tag .section-title{
   max-width: 50ch;
@@ -1073,9 +1073,7 @@
   gap: 16px;
 }
 
-.filter-bar .title-wrapper .title-medium {
-  margin-inline-end: auto;
-}
+.filter-bar .title-wrapper .title-medium { margin-inline-end: auto; }
 
 .filter-bar .close-btn {
   background-color: transparent;
@@ -1090,13 +1088,9 @@
   padding-block-end: 16px;
 }
 
-.filter-content::-webkit-scrollbar {
-  display: none;
-}
+.filter-content::-webkit-scrollbar { display: none; }
 
-.filter-content .search-wrapper {
-  padding: 12px 24px;
-}
+.filter-content .search-wrapper { padding: 12px 24px; }
 
 .accordion-btn {
   display: flex;
@@ -1108,9 +1102,7 @@
   color: var(--on-background-variant);
 }
 
-.accordion-btn .label-large {
-  margin-inline-end: auto;
-}
+.accordion-btn .label-large { margin-inline-end: auto; }
 
 .accordion-content {
   padding-inline: 24px;
@@ -1127,13 +1119,9 @@
   overflow: hidden;
 }
 
-.accordion-btn[aria-expanded="true"] {
-  background-color: var(--alpha-10);
-}
+.accordion-btn[aria-expanded="true"] { background-color: var(--alpha-10); }
 
-.accordion-btn[aria-expanded="true"] .trailing-icon {
-  transform: rotate(180deg);
-}
+.accordion-btn[aria-expanded="true"] .trailing-icon { transform: rotate(180deg); }
 
 .accordion-btn[aria-expanded="true"] + .accordion-content {
   padding-block: 8px 12px;
@@ -1167,13 +1155,9 @@
   pointer-events: all;
 }
 
-.recipe-container {
-  padding-block-end: 36px;
-}
+.recipe-container { padding-block-end: 36px; }
 
-.recipe-container .grid-list {
-  position: relative;
-}
+.recipe-container .grid-list { position: relative; }
 
 .recipe-container .title-wrapper {
   height: 40px;
