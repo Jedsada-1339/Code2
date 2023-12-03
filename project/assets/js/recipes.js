@@ -237,6 +237,7 @@ window.addEventListener("scroll", async e => {
 
     }
     
+    if (!nextPageUrl) $loadMore.innerHTML = `<p class="body-medium info-text">No more recipes</p>`;
     
 
 });
