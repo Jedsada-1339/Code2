@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SemesterGradeSorter",
+            "request": "launch",
+            "mainClass": "SemesterGradeSorter",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
+            "name": "MultiDimArrayEx",
+            "request": "launch",
+            "mainClass": "MultiDimArrayEx",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
+            "name": "Launch with Arguments Prompt",
+            "request": "launch",
+            "mainClass": "",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "RecursiveSum",
+            "request": "launch",
+            "mainClass": "RecursiveSum",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
+            "name": "excercise1",
+            "request": "launch",
+            "mainClass": "excercise1",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
+            "name": "excercise2",
+            "request": "launch",
+            "mainClass": "excercise2",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
+            "name": "excercise2_1",
+            "request": "launch",
+            "mainClass": "excercise2_1",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
+            "name": "excercise2_2",
+            "request": "launch",
+            "mainClass": "excercise2_2",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
+            "name": "excercise3",
+            "request": "launch",
+            "mainClass": "excercise3",
+            "projectName": "excercise_d56b1012"
+        }
+    ]
+}
