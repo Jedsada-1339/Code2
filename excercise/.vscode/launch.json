@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "testKKUstudent",
+            "request": "launch",
+            "mainClass": "testKKUstudent",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
+            "name": "Rectangle",
+            "request": "launch",
+            "mainClass": "Rectangle",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
             "name": "SemesterGradeSorter",
             "request": "launch",
             "mainClass": "SemesterGradeSorter",
