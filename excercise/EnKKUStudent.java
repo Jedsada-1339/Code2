@@ -1,6 +1,6 @@
-public class EnKKUStudent extends testKKUstudent {
+public class EnKKUStudent extends KKUStudent {
     protected int gearNumber;
-    protected String name;
+    
     public int getgearNumber() {
         return gearNumber;
     }

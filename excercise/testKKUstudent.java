@@ -1,7 +1,7 @@
 public class testKKUstudent {
 
     public static class KKUStudent {
-        private String name;
+        public String name;
         private double GPA;
         private static int numStudents = 0;
         private static String uniName = "KKU";
