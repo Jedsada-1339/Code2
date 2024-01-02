@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
             "name": "testKKUstudent",
             "request": "launch",
             "mainClass": "testKKUstudent",
