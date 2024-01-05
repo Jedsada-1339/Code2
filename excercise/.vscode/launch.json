@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RecursiveSum",
+            "request": "launch",
+            "mainClass": "RecursiveSum",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "testKKUstudent",
+            "request": "launch",
+            "mainClass": "testKKUstudent",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "DMEStudent",
+            "request": "launch",
+            "mainClass": "DMEStudent",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "DMEStudent",
+            "request": "launch",
+            "mainClass": "DMEStudent",
+            "projectName": "excercise_d56b1012"
+        },
+        {
+            "type": "java",
             "name": "Test",
             "request": "launch",
             "mainClass": "Test",
