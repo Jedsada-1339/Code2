@@ -14,8 +14,7 @@ class ComEnStudent extends Student {
         super(name);
     }
 
-    @Override
-    void writePrograms() {
+    public void writePrograms() {
         System.out.println(name + " writes programs in Python and Java");
     }
 }
@@ -25,8 +24,7 @@ class DmeEnStudent extends Student {
         super(name);
     }
 
-    @Override
-    void writePrograms() {
+    public void writePrograms() {
         System.out.println(name + " writes programs in Python and C#");
     }
 }
