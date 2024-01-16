@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Pretest",
+            "request": "launch",
+            "mainClass": "Pretest",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "RecursiveSum",
             "request": "launch",
             "mainClass": "RecursiveSum",
