@@ -10,7 +10,6 @@ abstract class Student {
 }
 
 class ComEnStudent extends Student {
-    // Constructor
     public ComEnStudent(String name) {
         super(name);
     }
@@ -22,7 +21,6 @@ class ComEnStudent extends Student {
 }
 
 class DmeEnStudent extends Student {
-    // Constructor
     public DmeEnStudent(String name) {
         super(name);
     }

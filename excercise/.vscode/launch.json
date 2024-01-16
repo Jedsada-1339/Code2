@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Rectangle",
+            "request": "launch",
+            "mainClass": "Rectangle",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "TestStudents",
             "request": "launch",
             "mainClass": "TestStudents",
