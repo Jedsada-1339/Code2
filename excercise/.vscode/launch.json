@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HelloWorldGUI1",
+            "request": "launch",
+            "mainClass": "HelloWorldGUI1",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "StudentCollection",
+            "request": "launch",
+            "mainClass": "StudentCollection",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "CollectionsExample",
+            "request": "launch",
+            "mainClass": "CollectionsExample",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Collections",
+            "request": "launch",
+            "mainClass": "Collections",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "StudentSortingExample",
+            "request": "launch",
+            "mainClass": "StudentSortingExample",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Rectangle",
             "request": "launch",
             "mainClass": "Rectangle",

@@ -17,6 +17,7 @@ class ComEnStudent extends Student {
     public void writePrograms() {
         System.out.println(name + " writes programs in Python and Java");
     }
+    
 }
 
 class DmeEnStudent extends Student {
@@ -27,6 +28,7 @@ class DmeEnStudent extends Student {
     public void writePrograms() {
         System.out.println(name + " writes programs in Python and C#");
     }
+
 }
 
 // TestStudents class
