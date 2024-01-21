@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FrameExample",
+            "request": "launch",
+            "mainClass": "FrameExample"
+        },
+        {
+            "type": "java",
             "name": "HelloWorldGUI1",
             "request": "launch",
             "mainClass": "HelloWorldGUI1",
