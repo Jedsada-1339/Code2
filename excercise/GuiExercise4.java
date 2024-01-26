@@ -24,7 +24,7 @@ public class GuiExercise4 extends JFrame {
         JButton cancelButton = new JButton("Cancel");
 
         JTextArea textArea = new JTextArea(4, 10);
-        textArea.setText("HELLOHELLOHELLOHELLOHELLOHELL" + "HELLOHELLOHELLOHELLOHELLOHELL" + "HELLOHELLOHELLOHELLOHELLOHELL");
+        textArea.setText("HELLOHELLOHELLOHELLOHELLOHELL" + "HELLOHELLOHELLOHELLOHELLOHELL" + "HELLOHELLOHELLOHELLOHELLOHELLE");
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
 
