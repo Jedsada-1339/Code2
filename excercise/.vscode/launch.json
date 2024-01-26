@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GuiExercise4",
+            "request": "launch",
+            "mainClass": "GuiExercise4",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "GuiExercise3",
+            "request": "launch",
+            "mainClass": "GuiExercise3",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "GuiExercise2",
+            "request": "launch",
+            "mainClass": "GuiExercise2",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "GuiExercice2",
+            "request": "launch",
+            "mainClass": "GuiExercice2",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "GUIexcerice2",
+            "request": "launch",
+            "mainClass": "GUIexcerice2",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "MySimple",
+            "request": "launch",
+            "mainClass": "MySimple",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "FrameExample",
             "request": "launch",
             "mainClass": "FrameExample"
