@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Gui2ex1",
+            "request": "launch",
+            "mainClass": "Gui2ex1",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Guitest",
+            "request": "launch",
+            "mainClass": "Guitest",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "GuiExercise4",
             "request": "launch",
             "mainClass": "GuiExercise4",
