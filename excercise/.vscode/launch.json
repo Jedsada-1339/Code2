@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimpleFormV6",
+            "request": "launch",
+            "mainClass": "SimpleFormV6",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "SimpleFormV5",
+            "request": "launch",
+            "mainClass": "SimpleFormV5",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "SimpleForm",
+            "request": "launch",
+            "mainClass": "saikaew.kanda.gui2.SimpleForm",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Gui2ex1",
             "request": "launch",
             "mainClass": "Gui2ex1",
