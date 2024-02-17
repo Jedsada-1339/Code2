@@ -30,11 +30,15 @@ public class SimpleForm extends JFrame {
         namePanel.add(nameTxt);
 
         addrPanel = new JPanel();
+        addrPanel.setLayout(new BoxLayout(addrPanel, BoxLayout.Y_AXIS));
         addrTxtArea.setLineWrap(true);
         addrTxtArea.setWrapStyleWord(true);
         addrTxtArea.setText("Khon Kaen");
-        addrPanel.add(addrLabel);
-        addrPanel.add(addrScrollPane);
+        JPanel addJPaneln = new JPanel();
+        addJPaneln.setLayout(new FlowLayout(FlowLayout.CENTER));
+        addJPaneln.add(addrLabel);
+        addJPaneln.add(addrScrollPane);
+        addrPanel.add(addJPaneln);
 
         buttonsPanel = new JPanel();
         buttonsPanel.add(okButton);

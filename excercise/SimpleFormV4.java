@@ -1,3 +1,7 @@
+
+
+import java.util.List;
+
 import javax.swing.*;
 
 public class SimpleFormV4 extends SimpleFormV3 {
@@ -21,6 +25,7 @@ public class SimpleFormV4 extends SimpleFormV3 {
         fileMenu.add(quitMI);
         this.setJMenuBar(menuBar);
     }
+
     public static void createAndShowGUI() {
         SimpleFormV4 window = new SimpleFormV4("SimpleFormV4");
         window.addComponents();

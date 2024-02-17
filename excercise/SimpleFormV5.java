@@ -1,4 +1,6 @@
 import javax.swing.*;
+
+import java.awt.BorderLayout;
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.event.*;
@@ -13,6 +15,7 @@ public class SimpleFormV5 extends SimpleFormV4
         super.addComponents();
         hobbiesLst.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         lsm = hobbiesLst.getSelectionModel();
+
     }
 
     public void addListeners() {

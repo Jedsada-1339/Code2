@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimpleFormV4v2",
+            "request": "launch",
+            "mainClass": "SimpleFormV4v2",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "SimpleFormV4",
+            "request": "launch",
+            "mainClass": "SimpleFormV4",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "SimpleFormV6",
             "request": "launch",
             "mainClass": "SimpleFormV6",
