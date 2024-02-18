@@ -2,13 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2023 codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -18,7 +11,6 @@
   /**
    * COLORS
    */
-
   --white: hsl(0, 0%, 100%);
   --overlay-bg: hsla(0, 3%, 13%, 0.5);
 
@@ -87,7 +79,6 @@
   /**
    * BORDER RADIUS
    */
-
   --radius-4: 4px;
   --radius-8: 8px;
   --radius-circle: 50%;
@@ -96,14 +87,12 @@
   /**
    * BOX SHADOW
    */
-
   --shadow-1: 0 -1px 8px hsla(0, 0%, 0%, 0.2);
   --shadow-2: 0 2px 4px 1px hsla(0, 0%, 0%, 0.3);
 
   /**
    * OTHERS
    */
-
   --header-height: 64px;
   --mobile-nav-height: 80px;
   --section-gap: 32px;
@@ -116,11 +105,9 @@
     /**
      * TRANSITION
      */
-
     --transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
     --transition-short: 200ms var(--transition-timing-function);
     --transition-medium: 500ms var(--transition-timing-function);
-
   }
 }
 
@@ -163,7 +150,6 @@
   --alpha-10: var(--dark-alpha-10);
   --alpha-20: var(--dark-alpha-20);
 }
-
 
 
 /*-----------------------------------*\
@@ -238,9 +224,11 @@
   
   :focus-visible { outline-color: var(--primary); }
 
+
 /*-----------------------------------*\
   #TYPOGRAPHY
 \*-----------------------------------*/
+
 .display-large {
   font-family: var(--font-primary);
   font-size: var(--fs-display-large);
@@ -318,6 +306,7 @@
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+
 .has-state {
   position: relative;
   overflow: hidden;
@@ -387,9 +376,6 @@
   gap: 8px;
   z-index: 4;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -484,7 +470,6 @@
 /**
  * Skeleton
  */
-
 .skeleton {
   background-color: var(--on-background);
   animation: skeleton-loding 500ms linear infinite alternate;
@@ -520,7 +505,6 @@
 /**
  * Card
  */
-
 .card {
   position: relative;
   display: flex;
@@ -616,7 +600,6 @@
   border-radius: var(--radius-circle);
 }
 
-
 /**
  * Button
  */
@@ -630,7 +613,6 @@
   gap: 8px;
   border-radius: var(--radius-4);
   transition: var(--transition-short);
-
 }
 
 .btn .material-symbols-outlined {
@@ -653,13 +635,11 @@
 
 
 /* secondary button */
-
 .btn-secondary {
   background-color: var(--primary-container);
 }
 
 /* badge button */
-
 .badge-btn{
   height: 40px;
   border-radius: var(--radius-pill);
@@ -672,7 +652,6 @@
 }
 
 /* filter button */
-
 .btn-filter {
   padding-inline: 12px;
 }
@@ -737,7 +716,6 @@
 /**
  * Filter chip
  */
- 
 .filter-chip {
   height: 32px;
   background-color: var(--background);
@@ -767,13 +745,9 @@
   border-color: var(--badge-btn);
 }
 
-
-
-
 /**
  * Badge
  */
-
  .badge {
   background-color: var(--error);
   color: var(--white);
@@ -783,12 +757,9 @@
   border-radius: var(--radius-pill);
  }
 
-
-
 /**
  * Snackbar
  */
-
 .snackbar {
   height: 48px;
   width: 100%;
@@ -817,10 +788,10 @@
 }
 
 
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+
 .navbar,
 .header .btn-primary {
   display: none;
@@ -931,6 +902,15 @@
   padding-inline: 16px;
   margin-block: 16px 12px;
   z-index: 1;
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  main { flex-grow: 1; }
+  
+  :focus-visible { outline-color: var(--primary); }
 }
 
 .tap-panel[hidden] {
@@ -941,8 +921,6 @@
   max-width: 100%;
   margin-block-start: 12px;
 }
-
-
 
 
 /*-----------------------------------*\
@@ -992,6 +970,7 @@
   gap: 8px;
 }
 
+
 /*-----------------------------------*\
   #TAG
 \*-----------------------------------*/
@@ -1020,7 +999,7 @@
 .footer .logo { display: none; }
 
 .footer {
-  padding: 16px;
+  padding: 1px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1034,15 +1013,11 @@
 .footer .edamam img{ width: 180px; }
 
 
-
-
-
 /*-----------------------------------*\
   #RECIPE PAGE
 \*-----------------------------------*/
 
 /* Filter bar*/
-
 .filter-bar {
   position: fixed;
   top: 0;
@@ -1208,9 +1183,6 @@
 }
 
 
-
-
-
 /*-----------------------------------*\
   #DETAIL PAGE
 \*-----------------------------------*/
@@ -1291,7 +1263,6 @@
 }
 
 /* Skeleton */
-
 .detail-banner-skeleton { aspect-ratio: 1 / 1; }
 
 .detail-content-skeleton .title-skeleton {
@@ -1307,9 +1278,6 @@
 .detail-content-skeleton .filter-chip-skeleton { width: 80px; }
 
 
-
-
-
 /*-----------------------------------*\
   #SAVED RECIPE PAGE
 \*-----------------------------------*/
@@ -1319,11 +1287,6 @@
 .saved-recipe-page .section-title { line-height: 40px; }
 
 
-
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1331,13 +1294,11 @@
 /**
  * responsive for larger than 600px screen
  */
-
 @media (min-width: 600px) {
 
   /**
    * CUSTOM PROPERTY
    */
-
   :root {
 
     /**
@@ -1348,14 +1309,12 @@
      --fs-display-large: 3.6rem;
      --fs-display-medium: 3.6rem;
      --fs-display-small: 3rem;
-
   }
 
 
   /**
    * REUSED STYLE
    */
-
   .container { padding-inline: 32px; }
 
   .grid-list { grid-template-columns: repeat(auto-fill, minmax(172px, 1fr)); }
@@ -1373,10 +1332,8 @@
   /**
    * TYPOGRAPHY
    */
-
   .display-large,
   .display-medium { line-height: 44px; }
-
   .display-small { line-height: 36px; }
 
   .title-small {
@@ -1386,11 +1343,9 @@
     letter-spacing: 0.15px;
   }
 
-
   /**
    * HERO
    */
-
   .banner-card { background-image: url("../images/hero-banner-medium.jpg"); }
 
   .search-field { height: 72px; }
@@ -1399,11 +1354,9 @@
 
   .hero .search-wrapper { margin-block: 24px 16px; }
 
-
   /**
    * TAB
    */
-
   .tab .tab-list {
     margin-inline: 0;
     padding-inline: 0;
@@ -1414,89 +1367,66 @@
     margin-inline: auto;
   }
 
-
   /**
    * RECIPE SLIDER
    */
-
   .slider-item { min-width: 206px; }
-
 
   /**
    * TAG
    */
-
   .tag .section-title { margin-block-end: 12px; }
-
 
   /**
    * FOOTER
    */
-
   .footer {
     justify-content: space-between;
     padding-inline: 32px;
   }
 
-
   /**
    * FILTER BAR
    */
-
   .filter-bar { border-radius: var(--radius-8) 0 0 var(--radius-8); }
-
 
    /**
     * DETAIL PAGE
     */
-
     .detail-banner { max-width: 420px; }
-
     .detail-stats .stats-item { padding-block: 20px; }
-
 }
-
 
 /**
  * responsive for larger than 768px screen
  */
-
- @media (min-width: 768px) {
+@media (min-width: 768px) {
 
     /**
     * REUSED STYLE
     */
-
     :root {
 
         /**
         * OTHERS
         */
-
         --header-height: 72px;
         --mobile-nav-height: 0px;
-
     }
-
 
     /**
       * RESET
       */
-
     body { padding-block-end: 0; }
-
 
     /**
      * REUSED STYPE
      */
-    
     .snackbar-container { bottom: 32px; }
-
 
     /**
      * HEAD
      */
-
     .header { padding-inline: 32px; }
 
     .navbar,
@@ -1525,33 +1455,25 @@
       border-radius: var(--radius-pill) var(--radius-pill) 0 0;
     }
 
-
     /**
      * MOBILE NAV
      */
-
     .mobile-nav { display: none; }
-
 
     /**
      * FOOTER
      */
-
     .footer .logo { display: block; }
-
 }
-
 
 /**
  * responsive for larger than 992px screen
  */
-
 @media (min-width: 992px) {
 
   /**
   * CUSTOM PROPERTY
   */
-
   :root {
 
     /**
@@ -1563,40 +1485,31 @@
     --fs-display-medium: 4.5rem;
     --fs-display-small: 3.6rem;
 
-
     /**
      * OTHERS
      */
-
     --header-height: 80px;
-
   }
-
 
   /**
    * TYPOGRAPHY
    */
-
   .display-large { line-height: 64px; }
 
   .display-medium { line-height: 52px; }
 
   .display-small { line-height: 44px;}
 
-
   /**
    * HEADER
    */
-  
   .header { padding-inline: 40px; }
 
   .navbar-link { padding-inline: 40px; }
 
-
   /**
    * HERO
    */
-
   .hero .search-wrapper { max-width: 800px; }
   
   .banner-card { background-image: url("../images/hero-banner-large.jpg"); }
@@ -1607,34 +1520,26 @@
     opacity: 0.8;
   }
 
-
   /**
    * TAB
    */
-
   .tab .tab-list { margin-block-start: 0; }
 
   .tab-btn { height: 64px; }
 
-
   /**
    * RECIPE SLIDER
    */
-
   .slider-item { min-width: calc(20% - 6.4px); }
-
 
   /**
    * FOOTER
    */
-
   .footer { padding-inline: 40px; }
-
 
   /**
    * RECIPE BAR
    */
-
   .filter-bar,
   .filter-bar.active {
     all: unset;
@@ -1668,11 +1573,9 @@
   .btn-filter,
   .overlay { display: none; }
 
-
   /**
    * DETAIL PAGE
    */
-
   .detail-page-min {
     display: grid;
     grid-template-columns: 1fr;
@@ -1697,14 +1600,11 @@
     padding-block: 24px;
     gap: 8px;
   }
-
 }
-
 
 /**
  * responsive for larger than 1400px screen
  */
-
 @media (min-width: 1400px) {
 
   /**
@@ -1712,11 +1612,8 @@
    */
   .container { max-width: 1280px; }
 
-
   /**
    * RECIPE SLIDER
    */
-
   .slider-item { min-width: calc(16.66% - 6.66px); }
-
 }

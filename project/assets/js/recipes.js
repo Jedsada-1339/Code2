@@ -149,7 +149,7 @@ const renderRecipe = data => {
         } = item
 
         const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
-        const /** {undefined || String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`); 
+        const /** {undefined || String} */ isSaved = window.localStorage.getItem(`FoodLover-recipe${recipeId}`); 
 
         const /** {NodeElement} */ $card = document.createElement("li");
         $card.classList.add("card");

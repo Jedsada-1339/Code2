@@ -1,21 +1,10 @@
 /**
- * @license MIT
- * @copyright 2023 codewithsadee
- * @author codewithsadee <mohammadsadee24@gmail.com>
- */
-
-"use strict";
-
-
-/**
  * Import
  */
-
 import { getTime } from "./module.js";
 
-
 const /** {Array} */ savedRecipes = Object.keys(window.localStorage).filter(item => {
-    return item.startsWith("cookio-recipe");
+    return item.startsWith("FoodLover-recipe");
 });
 
 const /** {NodeElement} */ $savedRecipeContainer = document.querySelector("[data-saved-recipe-container]");
@@ -37,7 +26,7 @@ if (savedRecipes.length) {
         } = JSON.parse(window.localStorage.getItem(savedRecipe));
 
         const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
-        const /** {undefined || String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`); 
+        const /** {undefined || String} */ isSaved = window.localStorage.getItem(`FoodLover-recipe${recipeId}`); 
 
         const /** {NodeElment} */ $card = document.createElement("div");
         $card.classList.add("card");
@@ -61,7 +50,6 @@ if (savedRecipes.length) {
 
                     <div class="meta-item">
                         <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-
                         <span class="label-medium">${getTime(cookingTime).time || "<1"} ${getTime(cookingTime).timeUnit}</span>
                     </div>  
 

@@ -38,19 +38,19 @@ export const /** {String} */ $skeletonCard = `
 const /** {String} */ ROOT = "https://api.edamam.com/api/recipes/v2";
 
 window.saveRecipe = function (element, recipeId) {
-    const /** {String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`);
+    const /** {String} */ isSaved = window.localStorage.getItem(`FoodLover-recipe${recipeId}`);
     ACCESS_POINT = `${ROOT}/${recipeId}`;
 
     if (!isSaved) {
         fetchData(cardQueries, function (data) {
-            window.localStorage.setItem(`cookio-recipe${recipeId}`, JSON.stringify(data));
+            window.localStorage.setItem(`FoodLover-recipe${recipeId}`, JSON.stringify(data));
             element.classList.toggle("saved");
             element.classList.toggle("removed");
             showNotification("Added to Recipe book")
         });
         ACCESS_POINT = ROOT;
     } else {
-        window.localStorage.removeItem(`cookio-recipe${recipeId}`);
+        window.localStorage.removeItem(`FoodLover-recipe${recipeId}`);
         element.classList.toggle("saved");
         element.classList.toggle("removed");
         showNotification("Removed from Recipe book")
