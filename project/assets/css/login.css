@@ -627,8 +627,28 @@ body {
   background-position: center;
 }
 
+.content {
+  position: fixed;
+  margin-right: 850px;
+  margin-bottom: 300px;
+  max-width: 600px;
+  color: whitesmoke;
+}
+
+.content h2 {
+  font-size: 2.5em;
+  letter-spacing: .03em;
+}
+
+.content p {
+  font-size: 1.2em;
+  letter-spacing: .02em;
+  margin: 20px 0;
+}
+
 .wrapper {
-  position: relative;
+  margin-left: 700px;
+  position: absolute;
   width: 400px;
   height: 440px;
   background: transparent;
@@ -641,7 +661,7 @@ body {
   align-items: center;
   overflow: hidden;
   transform: scale(0);
-  transition: transform .5s ease, height .2s ease;
+  transition: transform .3s ease, height .2s ease;
 }
 
 .wrapper.active-popup {
@@ -658,7 +678,7 @@ body {
 }
 
 .wrapper .form-box.login {
-  transition: transform .18s ease;
+  transition: transform .25s ease;
   transform: translateX(0);
 }
 
@@ -674,7 +694,7 @@ body {
 }
 
 .wrapper.active .form-box.register {
-  transition: transform .18s ease;
+  transition: transform .25s ease;
   transform: translateX(0);
 }
 
@@ -751,17 +771,19 @@ body {
   font-weight: 500;
   margin: -15px 0 15px;
   display: flex;
-  justify-content: space-between;
 }
 
-.remember-forgot label input {
+.remember-forgot input {
+  width: 20px;
   accent-color: var(--background);
   margin: 3px;
 }
 
 .remember-forgot a {
+  position: absolute;
   color: whitesmoke;
   text-decoration: none;
+  left: 250px;
 }
 
 .remember-forgot a:hover {
@@ -799,6 +821,27 @@ body {
   text-decoration: underline;
 }
  
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer .logo { display: none; }
+
+.footer {
+  position: relative;
+  margin-top: 580px;
+  margin-right: 1300px;
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.footer .edamam img{ width: 180px; }
+
 
 /*-----------------------------------*\
   #MEDIA QUERIES

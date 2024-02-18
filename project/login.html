@@ -81,6 +81,13 @@
         </a>
 
     </header>
+        
+    <div class="content">
+        <h2>Food Lover</h2>
+        <p>This website draws inspiration from the many people who enjoy eating and have a desire to cook for themselves 
+            but don't know where to find those recipes. You can search for the recipes you need to cook on this website.
+        </p>
+    </div>
 
     <!--
         Mobile navbar
@@ -141,7 +148,8 @@
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check">Remember me</label>
                     <a href="#">Forgot password?</a>
                 </div>
                 <button type="submit" class="btn">Login</button>
@@ -176,15 +184,27 @@
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
-                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check">I agree to the terms & conditions</label>
                 </div>
                 <button type="submit" class="btn">Register</button>
                 <div class="login-register">
                     <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                    
                 </div>
             </form>
         </div>
     </div>
+    
+    <!--
+        Footer
+    -->
+    <footer class="footer">
+        <a href="https://www.edamam.com/" target="_blank" class="edamam">
+            <img src="./assets/images/edamam.svg" width="200" height="40" loading="lazy" alt="edamam free recipe api">
+        </a>
+
+    </footer>
 
 </body>
 
