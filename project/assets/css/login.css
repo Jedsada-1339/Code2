@@ -768,6 +768,7 @@ body {
 }
 
 .input-box .visibility {
+  color: whitesmoke;
   position: absolute;
   top: 15px;
   right: 8px;
@@ -777,6 +778,7 @@ body {
 }
 
 .input-box .visibilityoff {
+  color: whitesmoke;
   position: absolute;
   top: 15px;
   right: 8px;
