@@ -774,6 +774,8 @@ body {
   transform: scale(1);
   cursor: pointer;
   z-index: 1;
+  overflow: hidden;
+  transition: transform .3s ease;
 }
 
 .input-box .visibilityoff {
@@ -784,6 +786,8 @@ body {
   transform: scale(0);
   cursor: pointer;
   z-index: 1;
+  overflow: hidden;
+  transition: transform .3s ease;
 }
 
 .forgot {
