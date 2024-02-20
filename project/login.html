@@ -64,11 +64,11 @@
 
         </nav>
 
-        <!-- <button class="icon-btn theme-switch has-state" aria-pressed="false" aria-label="Toggle light and dark theme"
+        <button class="icon-btn theme-switch has-state" aria-pressed="false" aria-label="Toggle light and dark theme"
             data-theme-btn>
             <span class="material-symbols-outlined light-icon" aria-hidden="true">light_mode</span>
             <span class="material-symbols-outlined dark-icon" aria-hidden="true">dark_mode</span>
-        </button> -->
+        </button>
 
         <a href="./saved-recipes.html" class="btn btn-primary has-icon">
             <span class="material-symbols-outlined" aria-hidden="true">book</span>
@@ -137,24 +137,28 @@
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">email</span>
                     </span>
-                    <input type="email" required>
-                    <label>Email</label>
+                    <input type="email" id="emailField" required>
+                    <label for="emailField">Email</label>
                 </div>
                 <div class="input-box">
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">lock</span>
                     </span>
-                    <input type="password" required>
-                    <label>Password</label>
+                    <input type="password" id="passwordField" required>
+                    <label for="passwordField">Password</label>
+                    <span class="visibility">
+                        <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+                    </span>
+                    <span class="visibilityoff">
+                        <span class="material-symbols-outlined" aria-hidden="true">visibility_off</span>
+                    </span>
                 </div>
-                <div class="remember-forgot">
-                    <input type="checkbox" id="login-check">
-                    <label for="login-check">Remember me</label>
+                <div class="forgot">
                     <a href="#">Forgot password?</a>
                 </div>
                 <button type="submit" class="btn">Login</button>
                 <div class="login-register">
-                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                    <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
                 </div>
             </form>
         </div>
@@ -166,30 +170,32 @@
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">person</span>
                     </span>
-                    <input type="text" required>
-                    <label>Username</label>
+                    <input type="text" id="textField" required>
+                    <label for="textField">Username</label>
                 </div>
                 <div class="input-box">
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">email</span>
                     </span>
-                    <input type="text" required>
-                    <label>Email</label>
+                    <input type="text" id="secondTextField" required>
+                    <label for="secondTextField">Email</label>
                 </div>
                 <div class="input-box">
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">lock</span>
                     </span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <input type="checkbox" id="register-check">
-                    <label for="register-check">I agree to the terms & conditions</label>
+                    <input type="password" id="secondPasswordField" required>
+                    <label for="secondPasswordField">Password</label>
+                    <span class="visibility">
+                        <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+                    </span>
+                    <span class="visibilityoff">
+                        <span class="material-symbols-outlined" aria-hidden="true">visibility_off</span>
+                    </span>
                 </div>
                 <button type="submit" class="btn">Register</button>
                 <div class="login-register">
-                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                    <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
                     
                 </div>
             </form>
