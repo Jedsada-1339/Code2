@@ -684,12 +684,13 @@ body {
 }
 
 .wrapper.active .form-box.login {
-  transition: none;
+  transition: transform .25s ease;
   transform: translateX(-400px);
 }
 
 .wrapper .form-box.register {
   position: absolute;
+  transition: transform .25s ease;
   transform: none;
   transform: translateX(400px);
 }
