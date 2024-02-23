@@ -163,6 +163,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  ::-ms-reveal {
+    display: none;
+  }
   
   li { list-style: none; }
   
