@@ -7,6 +7,8 @@ const iconvisibility = document.querySelector('.form-box.login .visibility');
 const iconvisibilityoff = document.querySelector('.form-box.login .visibilityoff');
 const iconrevisibility = document.querySelector('.form-box.register .visibility');
 const iconrevisibilityoff = document.querySelector('.form-box.register .visibilityoff');
+const buttonlogin = document.querySelector('.form-box.login .btn');
+const buttonRegister = document.querySelector('.form-box.register .btn');
 
 registerLink.addEventListener("click", ()=> {
     wrapper.classList.add('active');
@@ -58,4 +60,12 @@ iconrevisibilityoff.addEventListener("click", ()=> {
     if (passwordInput.type === "text") {
         passwordInput.type = "password";
     }
+})
+
+buttonlogin.addEventListener("click", ()=> {
+    wrapper.classList.add('active-login');
+})
+
+buttonlogin.addEventListener("click", ()=> {
+    wrapper.classList.add('active-register');
 })

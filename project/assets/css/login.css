@@ -476,16 +476,30 @@
   transition: var(--transition-short);
 }
 
-.btn .material-symbols-outlined, .btnLogin-popup .material-symbols-outlined {
+.btnLogout-popup {
+  position: fixed;
+  right: 30px;
+  height: 40px;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--radius-4);
+  transition: var(--transition-short);
+  transform: scale(0);
+}
+
+.btn .material-symbols-outlined, .btnLogin-popup .material-symbols-outlined, .btnLogout-popup .material-symbols-outlined {
   font-size: 1.8rem;
 }
 
-.btn.has-icon, .btnLogin-popup {
+.btn.has-icon, .btnLogin-popup, .btnLogout-popup {
   padding-inline-start: 16px;
 }
 
 /* primary button */
-.btn-primary, .btnLogin-popup {
+.btn-primary, .btnLogin-popup, .btnLogout-popup {
   background-color: var(--primary);
   color: var(--white);
 }
@@ -495,6 +509,10 @@
 }
 
 .btnLogin-popup:where(:hover, :focus-visible):not(:active) {
+  background-color: var(--primary-hover);
+}
+
+.btnLogout-popup:where(:hover, :focus-visible):not(:active) {
   background-color: var(--primary-hover);
 }
 
@@ -673,6 +691,10 @@ body {
   transform: scale(0);
 }
 
+.wrapper.active-login .btnLogin-popup {
+  transform: scale(0);
+}
+
 .wrapper .form-box {
   width: 100%;
   padding: 40px;
@@ -729,23 +751,6 @@ body {
   height: 50px;
   border-bottom: 2px solid whitesmoke;
   margin: 30px 0;
-}
-
-.input-box label {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
-  font-size: 1em;
-  color: whitesmoke;
-  font-weight: 500;
-  pointer-events: none;
-  padding: 0 30px;
-}
-
-.input-box input:focus~label,
-.input-box input:valid~label {
-  top: -5px;
 }
 
 .input-box input {
@@ -825,17 +830,22 @@ body {
 }
 
 .form-box.register .btn {
-    width: 100%;
-    height: 45px;
-    background: var(--background);
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: var(--on-background);
-    font-weight: 500;
-  }
+  width: 100%;
+  height: 45px;
+  background: var(--background);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--on-background);
+  font-weight: 500;
+}
+
+.form-box .btn:hover {
+  background: var(--on-background-variant);
+  color: var(--background);
+}
 
 .login-register {
   font-size: .9em;

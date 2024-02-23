@@ -1,6 +1,3 @@
-
-"use strict";
-
 import { fetchData } from "./api.js";
 
 window.addEventOnElement = ($elements, eventType, callback) => {
