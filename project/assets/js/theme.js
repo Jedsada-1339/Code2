@@ -1,6 +1,3 @@
-
-"use strict";
-
 const /** {Nodeelement} */ $HTML = document.documentElement;
 const /** {Boolean} */ isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 

@@ -50,6 +50,7 @@ if (savedRecipes.length) {
 
                     <div class="meta-item">
                         <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+
                         <span class="label-medium">${getTime(cookingTime).time || "<1"} ${getTime(cookingTime).timeUnit}</span>
                     </div>  
 
