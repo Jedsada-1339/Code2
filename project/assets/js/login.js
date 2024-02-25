@@ -66,6 +66,6 @@ buttonlogin.addEventListener("click", ()=> {
     wrapper.classList.add('active-login');
 })
 
-buttonlogin.addEventListener("click", ()=> {
+buttonRegister.addEventListener("click", ()=> {
     wrapper.classList.add('active-register');
 })
