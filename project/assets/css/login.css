@@ -645,6 +645,8 @@ body {
 .content {
   display: block;
   position: fixed;
+  margin-right: 850px;
+  margin-bottom: 300px;
   max-width: 600px;
   color: whitesmoke;
 }
@@ -897,26 +899,23 @@ body {
  * responsive for larger than 1400px screen
  */
  @media (min-width: 1400px) {
-
   .wrapper {
     margin-left: 700px;
   }
-
-  .content {
-    margin-right: 850px;
-    margin-bottom: 300px;
-  }
 }
 
+/**
+ * responsive for smaller than 1400px screen
+ */
 @media (max-width: 1400px) {
   .content { display: none; }
   .footer { display: none; }
 }
 
 /**
- * responsive for smaller than 992px screen
+ * responsive for larger than 992px screen
  */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
 
   /**
   * CUSTOM PROPERTY
