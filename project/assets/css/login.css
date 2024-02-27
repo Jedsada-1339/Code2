@@ -643,6 +643,7 @@ body {
 }
 
 .content {
+  display: block;
   position: fixed;
   margin-right: 850px;
   margin-bottom: 300px;
@@ -662,7 +663,6 @@ body {
 }
 
 .wrapper {
-  margin-left: 700px;
   position: absolute;
   width: 400px;
   height: 440px;
@@ -896,67 +896,53 @@ body {
 \*-----------------------------------*/
 
 /**
- * responsive for larger than 600px screen
+ * responsive for larger than 1400px screen
  */
-@media (min-width: 600px) {
+ @media (min-width: 1400px) {
+  .wrapper {
+    margin-left: 700px;
+  }
+}
+
+/**
+ * responsive for smaller than 1400px screen
+ */
+@media (max-width: 1400px) {
+  .content { display: none; }
+  .footer { display: none; }
+}
+
+/**
+ * responsive for larger than 992px screen
+ */
+@media (min-width: 992px) {
 
   /**
-   * CUSTOM PROPERTY
-   */
+  * CUSTOM PROPERTY
+  */
   :root {
 
     /**
      * TYPOGRAPHY
      */
 
-     /* font size */
-     --fs-display-large: 3.6rem;
-     --fs-display-medium: 3.6rem;
-     --fs-display-small: 3rem;
+    /* font size */
+    --fs-display-large: 5.7rem;
+    --fs-display-medium: 4.5rem;
+    --fs-display-small: 3.6rem;
+
+    /**
+     * OTHERS
+     */
+    --header-height: 80px;
   }
 
   /**
-   * REUSED STYLE
+   * HEADER
    */
-  .container { padding-inline: 32px; }
+  .header { padding-inline: 40px; }
 
-  .grid-list { grid-template-columns: repeat(auto-fill, minmax(172px, 1fr)); }
-
-  .section-title { margin-block-end: 24px; }
-
-  .snackbar-container {
-    right: auto;
-    left: 32px;
-    max-width: 360px;
-    width: 100%;
-  }
-
-  /**
-   * TYPOGRAPHY
-   */
-  .display-large,
-  .display-medium { line-height: 44px; }
-  .display-small { line-height: 36px; }
-
-  .title-small {
-    font-size: 1.6rem;
-    font-weight: var(--weight-medium);
-    line-height: 24px;
-    letter-spacing: 0.15px;
-  }
-
-  /**
-   * TAB
-   */
-  .tab .tab-list {
-    margin-inline: 0;
-    padding-inline: 0;
-  }
-
-  .tab .btn-secondary {
-    max-width: max-content;
-    margin-inline: auto;
-  }
+  .navbar-link { padding-inline: 40px; }
 }
 
 /**
@@ -980,11 +966,6 @@ body {
       * RESET
       */
     body { padding-block-end: 0; }
-
-    /**
-     * REUSED STYPE
-     */
-    .snackbar-container { bottom: 32px; }
 
     /**
      * HEAD
@@ -1024,61 +1005,29 @@ body {
 }
 
 /**
- * responsive for larger than 992px screen
+ * responsive for larger than 600px screen
  */
-@media (min-width: 992px) {
+@media (min-width: 600px) {
 
   /**
-  * CUSTOM PROPERTY
-  */
+   * CUSTOM PROPERTY
+   */
   :root {
 
     /**
      * TYPOGRAPHY
      */
 
-    /* font size */
-    --fs-display-large: 5.7rem;
-    --fs-display-medium: 4.5rem;
-    --fs-display-small: 3.6rem;
-
-    /**
-     * OTHERS
-     */
-    --header-height: 80px;
+     /* font size */
+     --fs-display-large: 3.6rem;
+     --fs-display-medium: 3.6rem;
+     --fs-display-small: 3rem;
   }
 
-  /**
-   * TYPOGRAPHY
-   */
-  .display-large { line-height: 64px; }
-
-  .display-medium { line-height: 52px; }
-
-  .display-small { line-height: 44px;}
-
-  /**
-   * HEADER
-   */
-  .header { padding-inline: 40px; }
-
-  .navbar-link { padding-inline: 40px; }
-
-  /**
-   * TAB
-   */
-  .tab .tab-list { margin-block-start: 0; }
-
-  .tab-btn { height: 64px; }
-}
-
-/**
- * responsive for larger than 1400px screen
- */
-@media (min-width: 1400px) {
-
-  /**
-   * REUSED STYLE
-   */
-  .container { max-width: 1280px; }
+  .title-small {
+    font-size: 1.6rem;
+    font-weight: var(--weight-medium);
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
 }
