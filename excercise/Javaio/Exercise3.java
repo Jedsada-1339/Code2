@@ -43,7 +43,7 @@ class Student extends Person implements Serializable {
 
     @Override
     public String toString() {
-        return "name=" + getName() + "\ngpa=" + gpa + "\nactivities=" + activities ;
+        return "Name = " + getName() + "\nGPA = " + gpa + "\nActivities = " + activities ;
     }
 
     // Additional methods for writeToFile and readFromFile
