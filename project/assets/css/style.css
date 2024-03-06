@@ -615,21 +615,56 @@
   transition: var(--transition-short);
 }
 
-.btn .material-symbols-outlined {
+.btnLogin-popup {
+  height: 40px;
+  max-width: max-content;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--radius-4);
+  transition: var(--transition-short);
+  transform: scale(0);
+}
+
+.btnLogout-popup {
+  position: fixed;
+  right: 20px;
+  height: 40px;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--radius-4);
+  transition: var(--transition-short);
+  transform: scale(1);
+}
+
+.btn .material-symbols-outlined, .btnLogin-popup .material-symbols-outlined, .btnLogout-popup .material-symbols-outlined {
   font-size: 1.8rem;
 }
 
-.btn.has-icon {
+.btn.has-icon, .btnLogin-popup, .btnLogout-popup {
   padding-inline-start: 16px;
 }
 
 /* primary button */
-.btn-primary {
+.btn-primary, .btnLogin-popup, .btnLogout-popup {
   background-color: var(--primary);
   color: var(--white);
 }
 
 .btn-primary:where(:hover, :focus-visible):not(:active) {
+  background-color: var(--primary-hover);
+}
+
+.btnLogin-popup:where(:hover, :focus-visible):not(:active) {
+  background-color: var(--primary-hover);
+}
+
+.btnLogout-popup:where(:hover, :focus-visible):not(:active) {
   background-color: var(--primary-hover);
 }
 

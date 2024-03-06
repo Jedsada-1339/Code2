@@ -478,11 +478,12 @@
   gap: 8px;
   border-radius: var(--radius-4);
   transition: var(--transition-short);
+  transform: scale(1);
 }
 
 .btnLogout-popup {
   position: fixed;
-  right: 30px;
+  right: 20px;
   height: 40px;
   padding-inline: 24px;
   display: flex;
@@ -692,10 +693,6 @@ body {
 }
 
 .wrapper.active-open .visibility {
-  transform: scale(0);
-}
-
-.wrapper.active-login .btnLogin-popup {
   transform: scale(0);
 }
 
@@ -1002,6 +999,15 @@ body {
      * MOBILE NAV
      */
     .mobile-nav { display: none; }
+}
+
+/**
+ * responsive for small than 768px screen
+ */
+@media (max-width: 768px) {
+  .btnLogout-popup {
+    right: 15px;
+  }
 }
 
 /**
