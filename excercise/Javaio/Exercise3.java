@@ -72,7 +72,7 @@ class Student extends Person implements Serializable {
 
 public class Exercise3 {
     public static void main(String[] args) {
-        Student manee = new Student("manee", 4.00);
+        Student manee = new Student("Manee", 4.00);
         manee.addActivities(new ArrayList<>(Arrays.asList("Running", "Gameming")));
         System.out.println(manee);
 
