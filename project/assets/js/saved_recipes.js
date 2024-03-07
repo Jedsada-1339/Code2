@@ -1,6 +1,3 @@
-"use strict";
-
-
 /**
  * Import
  */
@@ -31,7 +28,7 @@ if (savedRecipes.length) {
     } = JSON.parse(window.localStorage.getItem(savedRecipe));
 
     const /** {String} */ recipeId = uri.slice(uri.lastIndexOf("_") + 1);
-    const /** {undefined || String} */ isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`);
+    const /** {undefined || String} */ isSaved = window.localStorage.getItem(`FoodLover-recipe${recipeId}`);
 
     const /** {NodeElement} */ $card = document.createElement("div");
     $card.classList.add("card");
