@@ -53,7 +53,7 @@
         <nav class="navbar">
             <ul class="navbar-list">
                 <li>
-                    <a href="/" class="navbar-link title-small has-state">Home</a>
+                    <a href="./home.html" class="navbar-link title-small has-state">Home</a>
                 </li>
 
                 <li>
@@ -80,11 +80,6 @@
                 <span class="span">login</span>
         </a>
 
-        <a href="login.html" class="btnLogout-popup">
-            <span class="material-symbols-outlined" aria-hidden="true">logout</span>
-            <span class="span">logout</span>
-        </a>
-
     </header>
         
     <div class="content">
@@ -105,15 +100,17 @@
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">lunch_dining</span>
                     </span>
+
                     <span class="label-medium">Recipes</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="./home.html" class="nav-link" aria-current="true">
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">home</span>
                     </span>
+
                     <span class="label-medium">Home</span>
                 </a>
             </li>
@@ -123,12 +120,13 @@
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">book</span>
                     </span>
+
                     <span class="label-medium">Saved</span>
                 </a>
             </li>
 
-        </ul>
 
+        </ul>
     </nav>
 
     <div class="wrapper">
@@ -159,7 +157,9 @@
                 <div class="forgot">
                     <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <a href="./home.html" class="btn">
+                    <button type="submit">Login</button>
+                </a>
                 <div class="login-register">
                     <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
                 </div>

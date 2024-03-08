@@ -1,4 +1,3 @@
-const header = document.querySelector('.header');
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
@@ -63,20 +62,6 @@ iconrevisibilityoff.addEventListener("click", ()=> {
     }
 });
 
-function toggleLoginLogoutButtons() {
-    const header = document.querySelector('.header');
-    const buttonLogin = document.querySelector('.btnLogin-popup');
-    const buttonLogout = document.querySelector('.btnLogout-popup');
-
-    if (header.classList.contains('active-buttonlogout')) {
-        buttonLogin.style.transform = "scale(0)";
-        buttonLogout.style.transform = "scale(1)";
-    } else {
-        buttonLogin.style.transform = "scale(1)";
-        buttonLogout.style.transform = "scale(0)";
-    }
-}
-
 buttonlogin.addEventListener("click", ()=> {
     event.preventDefault();
     let emailInput = document.getElementById('emailField');
@@ -85,14 +70,7 @@ buttonlogin.addEventListener("click", ()=> {
     let passwordValue = passwordInput.value;
 
     if (emailValue && passwordValue) {
-        wrapper.classList.add('active-login');
-        wrapper.classList.remove('active-popup');
-        header.classList.add('active-buttonlogout');
-        
-        emailInput.value = ''; 
-        passwordInput.value = ''; 
-
-        toggleLoginLogoutButtons();
+        window.location.href = "home.html";
     }
 });
 
