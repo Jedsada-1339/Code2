@@ -475,13 +475,13 @@ label {
 }
 
 .rating label:hover { 
-    color: var(--background);
+    color: gold;
 }
 
 .rating label:hover,
 .rating label:hover ~ label,
 .rating input:checked ~ label {
-    color: var(--background);
+    color: gold;
 }
 
 .form-control {

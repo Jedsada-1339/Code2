@@ -9,6 +9,16 @@ const iconrevisibility = document.querySelector('.form-box.register .visibility'
 const iconrevisibilityoff = document.querySelector('.form-box.register .visibilityoff');
 const buttonlogin = document.querySelector('.form-box.login .btn');
 const buttonRegister = document.querySelector('.form-box.register .btn');
+const homerecipebutton = document.querySelector('.navbar-list');
+const saverecipebutton = document.querySelector('.btn.btn-primary.has-icon');
+
+homerecipebutton.addEventListener("click", ()=> {
+    alert("Please log in to use this website.");
+});
+
+saverecipebutton.addEventListener("click", ()=> {
+    alert("Please log in to use this website.");
+});
 
 registerLink.addEventListener("click", ()=> {
     wrapper.classList.add('active');
