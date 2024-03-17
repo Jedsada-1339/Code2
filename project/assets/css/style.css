@@ -630,7 +630,7 @@
 
 .btnLogout-popup {
   position: fixed;
-  right: 20px;
+  right: 30px;
   height: 40px;
   padding-inline: 24px;
   display: flex;
