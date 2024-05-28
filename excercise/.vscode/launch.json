@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "rethink",
+            "request": "launch",
+            "mainClass": "rethink",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "excercise2_1",
+            "request": "launch",
+            "mainClass": "excercise2_1",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "excercise1",
+            "request": "launch",
+            "mainClass": "excercise1",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "javaioexcercise1",
             "request": "launch",
             "mainClass": "javaioexcercise1",
